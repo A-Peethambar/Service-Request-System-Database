@@ -1,0 +1,11 @@
+<?php
+$directory = 'proofs';
+
+// Check if the directory doesn't exist, then create it
+if (!file_exists($directory)) {
+    mkdir($directory, 0777, true); // Set permission 0777 for full access
+    echo "Directory created successfully!";
+} else {
+    echo "Directory already exists!";
+}
+?>
